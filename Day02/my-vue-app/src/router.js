@@ -25,6 +25,11 @@ export default new Router({
       path: '/todo',
       name: 'todo',
       component: () => import('@/views/Todo.vue')
+    },
+    {
+      path: '/todo2',
+      name: 'todo2',
+      component: () => import('@/views/Todo2.vue')
     }
   ]
 })
