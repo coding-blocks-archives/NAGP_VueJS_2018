@@ -19,20 +19,15 @@
         </li>
         <li v-if="username" class="nav-item">
           <router-link class="nav-link" :to="`/@${username}`">
-            {{username}}
+            {{ username }}
           </router-link>
         </li>
         <li v-if="username == null" class="nav-item">
-          <router-link class="nav-link" to="/register">
-            Sign up
-          </router-link>
+          <router-link class="nav-link" to="/register"> Sign up </router-link>
         </li>
         <li v-if="username == null" class="nav-item">
-          <router-link class="nav-link" to="/login">
-            Sign in
-          </router-link>
+          <router-link class="nav-link" to="/login"> Sign in </router-link>
         </li>
-
       </ul>
     </div>
   </nav>
@@ -42,7 +37,7 @@
 export default {
   computed: {
     username() {
-      return this.$store.getters["users/username"]
+      return this.$store.getters["users/username"];
     }
   }
 };
