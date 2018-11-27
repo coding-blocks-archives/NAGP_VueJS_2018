@@ -5,6 +5,11 @@ export default {
     user: null,
     profile: null
   },
+  getters: {
+    username: function(state) {
+      return (state.user && state.user.username) || null;
+    }
+  },
   mutations: {
     setUser(state, payload) {
       state.user = payload;
