@@ -45,5 +45,5 @@ export default {
       return this.$store.getters["users/username"]
     }
   }
-}
+};
 </script>
